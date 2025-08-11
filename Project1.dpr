@@ -1,0 +1,15 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  untMedia in 'untMedia.pas' {fmrMedia};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfmrMedia, fmrMedia);
+  Application.CreateForm(TfmrMedia, fmrMedia);
+  Application.Run;
+end.
