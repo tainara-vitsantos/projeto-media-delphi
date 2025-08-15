@@ -62,7 +62,7 @@ object fmrMedia: TfmrMedia
     Font.Name = 'Verdana'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 0
+    TabOrder = 4
     OnClick = btnFecharClick
   end
   object btnCalcular: TButton
@@ -77,7 +77,8 @@ object fmrMedia: TfmrMedia
     Font.Name = 'Verdana'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 2
+    OnClick = btnCalcularClick
   end
   object btnLimpar: TButton
     Left = 214
@@ -91,7 +92,7 @@ object fmrMedia: TfmrMedia
     Font.Name = 'Verdana'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 3
     OnClick = btnLimparClick
   end
   object edtNota1: TEdit
@@ -105,7 +106,7 @@ object fmrMedia: TfmrMedia
     Font.Name = 'Lucida Fax'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 0
   end
   object edtNota2: TEdit
     Left = 298
@@ -118,19 +119,22 @@ object fmrMedia: TfmrMedia
     Font.Name = 'Lucida Fax'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 1
   end
   object edtResultado: TEdit
     Left = 214
-    Top = 137
+    Top = 140
     Width = 75
     Height = 26
+    TabStop = False
+    Color = clCadetblue
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
     Font.Name = 'Lucida Fax'
     Font.Style = [fsBold]
     ParentFont = False
+    ReadOnly = True
     TabOrder = 5
   end
 end

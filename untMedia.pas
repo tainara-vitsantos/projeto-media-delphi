@@ -19,6 +19,7 @@ type
     Label3: TLabel;
     procedure btnFecharClick(Sender: TObject);
     procedure btnLimparClick(Sender: TObject);
+    procedure btnCalcularClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,6 +32,15 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfmrMedia.btnCalcularClick(Sender: TObject);
+var nota1,nota2,res: real;
+begin
+  nota1:= StrToFloat(edtNota1.Text); //Teansforma string em número
+  nota2:= StrToFloat(edtNota2.Text);
+  res:= (nota1+nota2)/2;
+  edtResultado.Text := FloatToStr(res)
+end;
 
 procedure TfmrMedia.btnFecharClick(Sender: TObject);
 begin
